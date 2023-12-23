@@ -20,3 +20,5 @@ In the new tab opened, click **Import** in the sidebar and import the theme.css 
 
 That's it! Enjoy :)
 
+## Patch Notes
+See [CHANGELOG.md](https://github.com/mattermill/realm-pathbuilder/blob/main/changelog.md)
