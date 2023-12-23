@@ -1,9 +1,9 @@
 /* ==UserStyle==
 @name           ? - Dec 2023
-@namespace      github.com/openstyles/stylus
+@namespace      github.com/mattermill/realm-pathbuilder
 @version        1.0.0
-@description    A new userstyle
-@author         Me
+@description    Realm UI overhaul for Pathbuilder 2e
+@author         mattermill
 ==/UserStyle== */
 
 @-moz-document domain("pathbuilder2e.com") {
@@ -221,7 +221,6 @@
     .button-selection.red-text {
         color:#ec5f67!important;
     }
-
     .build-section .centered-div-holder {
         justify-content: center;
     }
@@ -722,18 +721,43 @@
     }
 
     /* TRAITS */
-    
-    .listview-item-level.item-level-box, .trait {
+    .listview-detail div:has(.trait), .weapon-traits {
+        display: flex;
+        align-items: center;
+    }
+    .trait {
         background:#111;
         border:1px solid #111;
     }
-    .trait.trait-uncommon, .item-level-box.item-uncommon, .trait.trait-uncommon {
-        border-color:#41712A !important;
-        color:#97C581 !important;
+    .listview-item-level.item-level-box, .trait.trait-uncommon, .trait.trait-rare,.trait.trait-unique {
+        width:24px;
+        height:24px;
+        text-align: center;
+        font-size: 10px;
+        font-weight: 700;
+        background: url("https://sssaves.com/realm/gem-common.png") no-repeat center center !important;
+        color:#000;
+        background-size:contain !important;
     }
-    .trait.trait-rare, .item-level-box.item-rare {
-        border-color: #833ABD !important;
-        color: #C88CF8 !important;
+    .trait.trait-uncommon, .trait.trait-rare, .trait.trait-unique {
+        text-indent: -999em;
+        border:0;
+        order:1;
+    }
+    .item-level-box.item-uncommon, .trait.trait-uncommon {
+        background: url("https://sssaves.com/realm/gem-uncommon.png") no-repeat center center !important;
+        color:#022907 !important;
+        background-size:contain !important;
+    }
+    .item-level-box.item-rare, .trait.trait-rare {
+        background: url("https://sssaves.com/realm/gem-rare.png") no-repeat center center !important;
+        color:#2F066B !important;
+        background-size:contain !important;
+    }
+    .item-level-box.item-unique, .trait.trait-unique {
+        background: url("https://sssaves.com/realm/gem-unique.png") no-repeat center center !important;
+        color:#531E00 !important;
+        background-size:contain !important;
     }
     #section-conditions {
         margin:0 0 8px 0;
@@ -748,7 +772,6 @@
     .div-button-simple  {
         border: 1px solid #43494D;
         background: #323638;
-
     }
     .div-button-simple:hover  {
         background:#3A3D40;
@@ -764,7 +787,14 @@
     }
     .modal-content {
         max-width:980px;
+        max-height:60vh;
         border:1px solid #7E7165;
+    }
+    .modal-content .scrollable {
+        height:auto !important;
+    }
+    .modal-content div .rounded-rectangle-white:last-child {
+        margin-bottom:0 !important;
     }
     .modal-content.modal-content-listview div:has(.tabbed-area-menu), .modal-content .dialog-top-bar {
         background: linear-gradient(180deg, rgba(0, 0, 0, 6e-05) 0%, rgba(36, 38, 41, 0.6) 98.56%), #4B545B;
