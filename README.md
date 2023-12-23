@@ -10,7 +10,7 @@
 - Download [theme.css](https://raw.githubusercontent.com/mattermill/realm-pathbuilder/main/theme.css)
  
 **3. Open Pathbuilder**
-- Navigate to [Pathbuilder 2e](https://pathbuilder2e.com)
+- Open [Pathbuilder 2e](https://pathbuilder2e.com)
 
 **4. Import theme.css**
 - Once Pathbuilder is loaded, click on the Stylus extension and in the popup, click **Manage**.
