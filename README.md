@@ -20,4 +20,4 @@
 - That's it! Enjoy :)
 
 ## Patch Notes
-See [CHANGELOG.md](https://github.com/mattermill/realm-pathbuilder/blob/main/changelog.md)
+See [CHANGELOG.md](https://github.com/mattermill/realm-pathbuilder/blob/main/CHANGELOG.md)
