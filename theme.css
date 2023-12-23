@@ -231,6 +231,7 @@
         margin-top:40px;
         padding-top: 40px;
         background: #5A141E;
+        top:40px;
         position: sticky;
         height: calc(100vh - 40px);
     }
@@ -307,7 +308,8 @@
     .details-buttons .div-button,
     .edittext-dark,
     .textarea-notes,
-    .button-money {
+    .button-money,
+    .edittext-custom {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -322,21 +324,26 @@
     .edittext-dark,
     .textarea-notes,
     .button-money,
-    .spinner-dark {
+    .spinner-dark,
+    .edittext-custom {
         background: #1C1F21 !important;
         border: 1px solid #1C1F21 !important;
         padding: 8px;
         border-radius: 0;
         color: #D2CDBE !important;
     }
-
+    .custom-div .small-text.grey-text {
+        margin-bottom:0.5em;
+        
+    }
     .section-top.rounded-rectangle > div:first-child > div:first-child > div:nth-child(2) .div-button:hover,
     .section-top.rounded-rectangle > div:first-child > div:first-child > div:nth-child(3) .div-button:hover,
     .section-top.rounded-rectangle > div:first-child > div:first-child > div:nth-child(4) .div-button:hover,
     .details-buttons .div-button:hover,
     .edittext-dark:hover,
     .textarea-notes:hover,
-    .button-money:hover {
+    .button-money:hover,
+    .edittext-custom:hover {
         border: 1px solid #AA916E !important;
     }
     .section-top.rounded-rectangle > div:first-child > div:first-child > div:nth-child(2) .div-button:focus,
@@ -345,7 +352,8 @@
     .details-buttons .div-button:focus,
     .edittext-dark:focus,
     .textarea-notes:focus,
-    .button-money:focus {
+    .button-money:focus,
+    .edittext-custom:focus {
         border: 1px solid #AA916E !important;
     }
     .small-text.grey-text.button-text {
@@ -761,6 +769,10 @@
         color: #FFF;
         border-bottom: 1px solid #FFF;
     }
+    .prof-layout.button-text {
+        display:flex;
+        justify-content:space-between;
+    }
     /* MAIN CONTENT */
     .weapon-span i {
         color: #AA916E;
@@ -800,6 +812,7 @@
     .listview-title {
         margin: 0 !important;
         padding: 0 !important;
+        color:#FFF !important;
     }
     .listview-detail {
         margin: 0 !important;
@@ -818,6 +831,9 @@
         background: none;
     }
     .div-listview-scroller::-webkit-scrollbar-thumb {
+        background:#7E7165;
+    }
+    #mySidenav.sidenav::-webkit-scrollbar-thumb {
         background:#7E7165;
     }
 
@@ -977,7 +993,7 @@
         color: #E6E1D7;
         border: none;
     }
-    .modal-content.modal-content-listview .tabbed-area-menu .section-menu-selected,
+    .modal-content.modal-content-listview .tabbed-area-menu .section-menu-selected, .prof-layout.button-text .prof-name.prof-selected,
     .listview-title-selected {
         color: #FFF;
         background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FFF7E9 0%, #E8AD3C 100%);
@@ -1117,4 +1133,17 @@
         margin-left: -80px;
     }
     /* DICE */
+    .dice-switch {
+        width:64px;
+        height:72px;
+        background:url("https://sssaves.com/realm/d20.png") no-repeat center center;
+        background-size: cover;
+        transition: all 0.3s;
+    }
+    .dice-switch:hover {
+        transform: rotate(360deg) scale(1.25);
+    }
+    .dice-switch img {
+        display: none;
+    }
 }
