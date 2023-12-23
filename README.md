@@ -12,7 +12,10 @@
 **3. Open Pathbuilder**
 - Open [Pathbuilder 2e](https://pathbuilder2e.com)
 
-**4. Import theme.css**
+**4. Open Stylus**
+Click on the Stylus extension in the navbar
+
+**5. Import theme.css**
 - Once Pathbuilder is loaded, click on the Stylus extension and in the popup, click **Manage**.
 - In the new tab opened, click **Import** in the sidebar and import the theme.css file you downloaded earlier.
 - That's it! Enjoy :)
