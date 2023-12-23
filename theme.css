@@ -22,8 +22,7 @@
         color: #FFF;
     }
 
-    /* GLOBALS */
-    
+    /* GLOBALS */    
     * {
         box-sizing: border-box !important;
     }
@@ -100,6 +99,7 @@
     .menu-group .sidenav-link,
     .modal-button {
         text-align: center;
+        width: auto !important;
         margin: 0.2em;
         padding: 8px 12px;
         font-size: 12px;
@@ -862,11 +862,7 @@
     }
     .modal-content {
         max-width: 980px;
-        max-height: 60vh;
         border: 1px solid #7E7165;
-    }
-    .modal-content .scrollable {
-        height: auto !important;
     }
     .modal-content div .rounded-rectangle-white:last-child {
         margin-bottom: 0 !important;
