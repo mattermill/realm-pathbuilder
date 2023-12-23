@@ -7,6 +7,9 @@
 ==/UserStyle== */
 
 @-moz-document domain("pathbuilder2e.com") {
+    
+    @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@400;700&display=swap');
+    
     html, body {
         font-size:14px;
     }
@@ -28,6 +31,9 @@
     }
     .subtitle {
         margin-left:0 !important;
+    }
+    .modal-content .dialog-top-bar, .div-listview-info .top-div .listview-title {
+        font-family:'Averia Serif Libre' !important;
     }
     /* MENU */
     .sidenav {
@@ -88,11 +94,38 @@
     .menu-group .sidenav-link, .modal-button {
         text-align: center;
         margin:0.2em;
-        padding:8px;
-        font-size:10px;
-        background: #5F5C58;
-        border: 1px solid #7E7165;
-        box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.172611), 0px 2px 8px rgba(0, 0, 0, 0.3), inset 0px 0px 5px #343434;
+        padding: 8px 12px;
+        font-size:12px;
+        font-weight:500;
+        border-radius:0;
+        background: linear-gradient(180deg, #7B7268 0.01%, #7B6F5F 50%, #6A6052 50.01%, #6A5A47 88.54%, #847158 100%);
+        box-shadow:inset 0 0 1px 1px rgba(0,0,0,0.3);
+        border: 1px solid #AA916E;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+        transition: all 0.3s;
+        position:relative;
+        z-index:1;
+        overflow:hidden;
+    }
+    .modal-button:before {
+        display:block;
+        position:absolute;
+        top:-100%;
+        left:0;
+        width:100%;
+        height:100%;
+        z-index:-1;
+        content:'';
+        background: linear-gradient(180deg, #821E32 0.01%, #9C2B42 50%, #5A141E 50.01%, #500A14 88.54%, #7B1B2E 100%);
+        box-shadow:inset 0 0 0 2px rgba(0,0,0,0.3), 0px 0px 4px rgba(187, 165, 133, 0.55);
+        transition: all 0.1s;
+    }
+    .modal-button:hover {
+        border-color:#C7B293;
+        filter: drop-shadow(0px 0px 4px rgba(187, 165, 133, 0.55));
+    }
+    .modal-button:hover:before {
+        top:0;
     }
     /* Menu Signin */
     #menu-header-signin {
@@ -171,7 +204,6 @@
     }
     .main-column-left .rounded-rectangle .div-button, .button-show-plan {
         background: #470E16 !important;
-        border-radius: 8px;
         border:1px solid #821E32 !important;
         padding: 8px;
     }
@@ -210,6 +242,14 @@
         box-shadow: 10px 6px #000 0.6;
     }
     .cogButton .centred-parent img {
+        width:32px;
+    }
+    #divBuild .button-column {
+        margin:4px;
+        padding:0;
+    }
+    #divBuild .button-column .button-icon {
+        margin:0;
         width:32px;
     }
     /* FORMS */
@@ -686,7 +726,6 @@
     .listview-item-level.item-level-box, .trait {
         background:#111;
         border:1px solid #111;
-        border-radius:4px;
     }
     .trait.trait-uncommon, .item-level-box.item-uncommon, .trait.trait-uncommon {
         border-color:#41712A !important;
@@ -747,6 +786,7 @@
         display: flex;
         align-items: center;
         justify-content:center;
+        font-size:1em;
     }
     .modal-content .dialog-top-bar:before, .modal-content .dialog-top-bar:after, .modal-content.modal-content-listview div:has(.tabbed-area-menu):before, .modal-content.modal-content-listview div:has(.tabbed-area-menu):after {
         display:block;
@@ -820,23 +860,38 @@
     .modal-content .layout-item:last-child {
         border:none;
     }
-    .modal-content .modal-buttons {
-        padding:12px;
-        
-    }
     .spinner-dark {
         color: #40372A; /* earth */
         background:#E6E1D7;
     }
-    .div-listview-info {
+    .content-listview .div-listview-info {
+        padding:1.5em 2em !important;
         background:#242628 !important;
     }
     .div-listview-info .top-div {
-        font-weight:600;
+        margin-bottom:1em;
+        padding-bottom:0.5em;
+        border-bottom: 1px solid #7E7165;
+        justify-content:center !important;
+    }
+    .div-listview-info .top-div .listview-title {
+        font-weight:700;
         font-size:1.5em;
     }
     .div-listview-info .top-div img {
         margin-right:0.5em;
+    }
+    .div-listview-info .listview-detail b {
+        color:#AA916E;
+        font-family:'Averia Serif Libre' !important;
+        font-size:15px;
+        text-transform: none;
+    }
+    .div-listview-info .listview-detail br {
+        content: "";
+        margin: 2em;
+        display: block;
+        font-size: 25%;
     }
     .modal-content .div-listview-scroller,.content-listview .div-listview-scroller {
         background: #34393E;
