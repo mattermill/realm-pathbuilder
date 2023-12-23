@@ -7,7 +7,7 @@
 - [Stylus in the Chrome Web Store](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
 
 **2. Download the theme**
-- Download the `theme.css` file from this repository.
+- Download [theme.css](https://github.com/mattermill/realm-pathbuilder/blob/main/theme.css) from this repository.
  
 **3. Open Pathbuilder**
 - Navigate to [Pathbuilder 2e](https://pathbuilder2e.com)
