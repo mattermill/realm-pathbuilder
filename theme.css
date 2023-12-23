@@ -101,7 +101,7 @@
         text-align: center;
         width: auto !important;
         margin: 0.2em;
-        padding: 8px 12px;
+        padding: 8px 16px;
         font-size: 12px;
         font-weight: 500;
         border-radius: 0;
@@ -113,6 +113,10 @@
         position: relative;
         z-index: 1;
         overflow: hidden;
+    }
+    .modal-button {
+        font-size:14px !important;
+        font-family: 'Averia Serif Libre' !important;
     }
     .menu-group .sidenav-link:before, .modal-button:before {
         display: block;
@@ -134,6 +138,27 @@
     }
     .menu-group .sidenav-link:hover:before, .modal-button:hover:before {
         top: 0;
+    }
+    .modal-button:nth-child(2) {
+        background: linear-gradient(180deg, #38474C 0.01%, #2E3D42 50%, #253439 50.01%, #27363B 88.54%, #38474C 100%);
+        border-color:#7E7165;
+    }
+    .modal-button:nth-child(3), .modal-button:nth-child(4),.modal-button:nth-child(5) {
+        text-align: center;
+        width: auto !important;
+        margin: 0.2em;
+        padding: 8px 12px;
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 0;
+        background:none;
+        box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.3);
+        border: 1px solid #5E5953;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+        transition: all 0.3s;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
     }
     /* Menu Signin */
     #menu-header-signin {
@@ -203,10 +228,11 @@
     /* PLANNER */
     .main-column-left {
         width: 320px;
+        margin-top:40px;
         padding-top: 40px;
         background: #5A141E;
         position: sticky;
-        top: 40px;
+        height: calc(100vh - 40px);
     }
     .main-column-left .rounded-rectangle,
     .rounded-rectangle-white {
@@ -237,8 +263,18 @@
     .build-section .centered-div-holder {
         justify-content: center;
     }
-    .build-section .centered-div-holder .subtitle {
-        color: #FFF !important;
+    .build-section .centered-div-holder #id_header {
+        font-family: 'Averia Serif Libre' !important;
+        font-size:1.5em;
+        width:100%;
+        text-align:center;
+    }
+    .build-section .centered-div-holder #id_header:before {
+        display:block;
+        height:32px;
+        content:'';
+        background:url("https://sssaves.com/realm/border-top.svg") no-repeat center center;
+        margin-bottom:1em;
     }
     .main-column-left .small-text.grey-text {
         color: #BEA988 !important;
@@ -600,6 +636,14 @@
         flex-direction: column;
         align-items: center;
     }
+    .speed-size-right div:nth-child(2) {
+        color:red;
+        display:block;
+        font-size:0px;
+    }
+    .speed-size-right div:nth-child(2)::first-letter {
+        color:blue !important;
+    }
     .speed-size-img {
         display: none;
     }
@@ -669,9 +713,8 @@
         margin: 0;
         padding: 8px 0;
         align-items: center;
-        flex-direction: row-reverse;
         box-shadow: inset 0 -1px 0 #5E5953;
-        gap: 8px;
+        gap: 4px;
     }
     .section-init {
         display: none;
@@ -745,6 +788,9 @@
         margin-left: 8px;
         color: #FFF !important;
     }
+    .div-spell-level-new .small-text.grey-text {
+        color:#AA916E !important;
+    }
     /* CHARACTER SELECT */
     .div-listview-scroller .listview-item {
         border-radius: 8px;
@@ -771,6 +817,9 @@
     ::-webkit-scrollbar-track {
         background: none;
     }
+    .div-listview-scroller::-webkit-scrollbar-thumb {
+        background:#7E7165;
+    }
 
     /* CONTAINER FEATS */
     .layout-tabbed-line.grid-container .grid-item .subtitle {
@@ -791,6 +840,7 @@
     .weapon-traits {
         display: flex;
         align-items: center;
+        margin-bottom:0.5em;
     }
     .trait {
         background: #111;
@@ -920,8 +970,10 @@
         border: none;
     }
     .modal-content.modal-content-listview .tabbed-area-menu .section-menu {
+        font-family: 'Averia Serif Libre' !important;
+        font-weight:600;
         background: none;
-        font-size: 14px !important;
+        font-size: 16px !important;
         color: #E6E1D7;
         border: none;
     }
@@ -944,7 +996,7 @@
     .modal-content.modal-content-listview .submenu .section-menu {
         background: none;
         text-transform: uppercase;
-        font-size: 11px !important;
+        font-size: 12px !important;
         font-weight: 500;
         letter-spacing: 0.25px;
         color: #E6E1D7;
