@@ -1057,6 +1057,9 @@
     .div-listview-info .top-div img {
         margin-right: 0.5em;
     }
+    .listview-title.red-text {
+        color:rgba(255,255,255,0.3) !important;
+    }
     .div-listview-info .listview-detail b {
         color: #AA916E;
         font-family: 'Averia Serif Libre' !important;
