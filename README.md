@@ -4,7 +4,7 @@
 ## Installation
 
 **1. Install Stylus for Chrome**
-- [Get Stylus in the Chrome Web Store](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
+- [Stylus in the Chrome Web Store](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
 
 **2. Download the theme**
 - Download the `theme.css` file from this repository.
